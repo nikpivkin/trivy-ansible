@@ -1,0 +1,5 @@
+- name: Pass variables to role
+  include_role:
+    name: aws/s3
+  vars:
+    bucket_name: testbucket

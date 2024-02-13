@@ -1,0 +1,5 @@
+- name: Create an empty bucket
+  amazon.aws.s3_bucket:
+    name: '{{ bucket_name }}'
+    state: present
+    endpoint_url: http://localhost:4566

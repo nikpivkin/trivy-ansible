@@ -1,0 +1,12 @@
+---
+
+- name: Playbook to create S3 bucket
+  hosts: localhost
+  vars:
+    favcolor: blue
+  vars_files:
+    - /vars/external_vars.yml
+  roles:
+    - role: test
+    - geerlingguy.firewall
+    
